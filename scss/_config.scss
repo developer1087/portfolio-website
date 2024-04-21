@@ -1,0 +1,16 @@
+// Variables
+$website-width: 1280px;
+$main-color: #ED2647;
+$light-color: #ffffff;
+$medium-color: #2668ed;
+$dark-color: #185ed6;
+$bg-image: url('img/andras-vas-Bd7gNnWJBkU-unsplash.jpg');
+
+// Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
